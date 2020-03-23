@@ -102,25 +102,3 @@ function showWord(words) {
   // Output random word
   currentWord.innerHTML = words[randIndex];
 }
-
-// Countdown timer
-function countdown() {
-  // Make sure time is not run out
-  if (time > 0) {
-    // Decrement
-    time--;
-  } else if (time === 0) {
-    // Game is over
-    isPlaying = false;
-  }
-  // Show time
-  timeDisplay.innerHTML = time;
-}
-
-// Check game status
-function checkStatus() {
-  if (!isPlaying && time === 0) {
-    message.innerHTML = 'Game Over!!!';
-    score = -1;
-  }
-}
